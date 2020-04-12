@@ -1,2 +1,3 @@
 module codewarsSimplePigLatin {
+	requires junit;
 }
