@@ -13,7 +13,8 @@ public class PigLatinTest {
 	}
 
 	@Test
-	public void pigItTest_doubleLetter_returnCorrectString() {
+	public void pigItTest_doubleLetterSingleWord_returnCorrectString() {
 		assertEquals("oayy", PigLatin.pigIt("yo"));
+		assertEquals("oayG", PigLatin.pigIt("Go"));
 	}
 }
