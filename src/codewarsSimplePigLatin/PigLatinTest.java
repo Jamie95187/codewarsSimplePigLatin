@@ -33,4 +33,9 @@ public class PigLatinTest {
 		assertEquals("elloHay orldWay", PigLatin.pigIt("Hello World"));
 		assertEquals("elloHay riendsFay", PigLatin.pigIt("Hello Friends"));
 	}
+	
+	@Test
+	public void pigItTest_threeWords_returnCorrectString() {
+		assertEquals("avaJay sIay oolCay", PigLatin.pigIt("Java Is Cool"));
+	}
 }
