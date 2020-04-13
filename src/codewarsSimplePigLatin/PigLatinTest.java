@@ -43,4 +43,14 @@ public class PigLatinTest {
 	public void pigItTest_threeWordsWithPunctuation_returnCorrectString() {
 		assertEquals("avaJay sIay oolCay !", PigLatin.pigIt("Java Is Cool !"));
 	}
+	
+	@Test
+	public void pigItTest_fourWordsAcceptanceCriteriaOne_returnCorrectString() {
+		assertEquals("igPay atinlay siay oolcay", PigLatin.pigIt("Pig latin is cool"));
+	}
+	
+	@Test
+	public void pigItTest_twoWordsWithPunctuationAcceptanceCriteriaTwo_returnCorrectString() {
+		assertEquals("elloHay orldWay !", PigLatin.pigIt("Hello World !"));
+	}
 }
