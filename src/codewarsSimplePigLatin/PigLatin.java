@@ -16,10 +16,14 @@ public class PigLatin {
 		String[] inputArray = new String[input.split(" ").length];
 		int counter = 0;
 		for(String word : input.split(" ")) {
-			if(word.length() == 1) {
-				inputArray[counter] = word + "ay";
+			if(word.substring(0,1).matches("[a-z]|[A-Z]")) {
+				if(word.length() == 1) {
+					inputArray[counter] = word + "ay";
+				} else {
+					inputArray[counter] = word.substring(1) + word.charAt(0) + "ay";
+				}
 			} else {
-				inputArray[counter] = word.substring(1) + word.charAt(0) + "ay";
+				inputArray[counter] = word;
 			}
 			counter++;
 		}
