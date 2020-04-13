@@ -14,6 +14,9 @@ pigIt('Hello world !');     // elloHay orldway !
 ```
 ## Tests
 
+Tested with Junit 4 in Eclipse.
+
+```
 @Test
 public void pigItTest_singleLetter_returnCorrectString() {
 	assertEquals("Aay", PigLatin.pigIt("A"));
@@ -51,3 +54,4 @@ public void pigItTest_fourWordsAcceptanceCriteriaOne_returnCorrectString() {
 public void pigItTest_twoWordsWithPunctuationAcceptanceCriteriaTwo_returnCorrectString() {
 	assertEquals("elloHay orldWay !", PigLatin.pigIt("Hello World !"));
 }
+```
